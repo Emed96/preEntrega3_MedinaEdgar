@@ -1,0 +1,13 @@
+$colorPalet: (
+    c1: #FA0DB4,
+    c2: #C70BDE,
+    c3: #9700F5,
+    c4: #540BDE,
+    c5: #1D0DFA
+);
+
+$currentSlide: 0%;
+
+:export{
+    currentSlide: $currentSlide;
+}

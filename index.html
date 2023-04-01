@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crafthing</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="navMenu">
+            <input class="btnMenu-Carrito" type="checkbox" name="menu-carrito" id="btnMenu">
+            <label for="btnMenu" class="bMenu">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"/></svg>
+                <!-- <img src="./iconos/bx-menu.svg" alt="barra de menu"> -->
+            </label>
+            <nav class="menuPrincipal">
+                <ul>
+                    <li><a href=""><h3>NOSOTROS</h3></a></li>
+                    <li><a href=""><h3>SERVICIOS</h3></a></li>
+                    <li><a href=""><h3>CONTACTOS</h3></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="logo"></div>
+        <div class="carrito">
+            <input class="btnMenu-Carrito" type="checkbox" name="menu-carrito" id="btnCarrito">
+            <label for="btnCarrito" class="bCarrito">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M5 22h14c1.103 0 2-.897 2-2V9a1 1 0 0 0-1-1h-3V7c0-2.757-2.243-5-5-5S7 4.243 7 7v1H4a1 1 0 0 0-1 1v11c0 1.103.897 2 2 2zM9 7c0-1.654 1.346-3 3-3s3 1.346 3 3v1H9V7zm-4 3h2v2h2v-2h6v2h2v-2h2l.002 10H5V10z"/></svg>
+            </label>
+            <div class="elementosCarrito">
+                <article><span>aqui van los articulos del carrito</span></article>
+                <article><span>aqui van los articulos del carrito</span></article>
+                <article><span>aqui van los articulos del carrito</span></article>
+            </div>
+        </div>
+    </header>
+    
+    <main class="cuerpo">
+        <div class="carousel" data-carousel>
+            <div class="carousel-buttons">
+                <div>
+                    <button class="carousel-button carousel-button-previous" data-carousel-button-previous>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm2.707 14.293-1.414 1.414L7.586 12l5.707-5.707 1.414 1.414L10.414 12l4.293 4.293z"/></svg>
+                    </button>
+                </div>
+                <div>
+                    <button class="carousel-button carousel-button-next" data-carousel-button-next>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm-1.293 15.707-1.414-1.414L13.586 12 9.293 7.707l1.414-1.414L16.414 12l-5.707 5.707z"/></svg>
+                    </button>
+                </div>                
+            </div>
+            <div class="slides" data-carousel-slides-container>
+                <div class="slide slide1">
+                    <div class="content content-1">
+                        <span>imagen1</span>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="content content-2">
+                        <span>imagen2</span>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="content content-3">
+                        <span>imagen3</span>
+                    </div>
+                </div>
+                <div class="slide slide4">
+                    <div class="content content-4">
+                        <span>imagen4</span>
+                    </div>
+                </div>
+                <div class="slide slide5">
+                    <div class="content content-5">
+                        <span>imagen5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="articulos">
+            <article>
+                <div class="imagenEvento">
+                    <span>Imagen de un evento</span>
+                </div>
+                <h3 class="titulo">Titulo del Articulo</h3>
+                <p class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eius aut illo libero blanditiis! Earum, tempore in doloremque perspiciatis voluptatibus repudiandae provident cum vel unde quis maxime magni vero soluta.
+                </p>
+            </article>
+
+            <article>
+                <div class="imagenEvento">
+                    <span>Imagen de un evento</span>
+                </div>
+                <h3 class="titulo">Titulo del Articulo</h3>
+                <p class="texto">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit placeat quia voluptate, eveniet possimus, aut nobis tempore amet magnam et sapiente! Pariatur debitis architecto nam tempora cum voluptate? Nostrum, quas.
+                </p>
+            </article>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="sreviciosFooter">
+            <div>
+                <input type="checkbox" class="btnServiciosFooter" name="" id="ckbServiciosFooter">
+                <label for="ckbServiciosFooter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"/></svg>
+                    <span>Servicio</span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" class="btnSocialFooter" name="" id="ckbSocialFooter">
+                <label for="ckbSocialFooter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"/></svg>
+                    <span>Social</span>
+                </label>
+            </div>
+            <div>
+                <input type="checkbox" class="btnContactoFooter" name="" id="ckbContactoFooter">
+                <label for="ckbContactoFooter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 11h-6V5h-2v6H5v2h6v6h2v-6h6z"/></svg>
+                    <span>Contacto</span>
+                </label>
+            </div>          
+        </div>
+
+        <div class="logo"></div>
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

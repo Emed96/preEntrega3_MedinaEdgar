@@ -1,0 +1,71 @@
+/* Estilos Header */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    svg{
+        fill: map-get($map: $colorPalet, $key: c1);
+        min-width: 30px;
+        min-height: 30px;
+    }
+}
+
+/*Estilos logo */
+
+.logo{
+    border: solid 1px;
+    border-radius: 50%;
+    background-image: url(../image/logo1.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 10%;
+    height: 10vh;
+    min-width: 100px;
+    min-height: 55px;
+}
+
+/* Estilos barra de navegacion */
+
+.menuPrincipal{
+    position: fixed;
+    background-color: #FFF;
+    top: 100px;
+    left: -100vw;
+    height: 100vh;
+    padding: 2vh 8vw;
+    transition: all .5s;
+    z-index: 2;
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
+
+#btnMenu:checked ~ .menuPrincipal{
+    left: 0px;
+}
+
+
+#btnCarrito:checked ~ .elementosCarrito{
+    right: 0px;
+}
+
+/* Estilos barra elementos de carrito */
+
+.elementosCarrito{
+    position: fixed;
+    background-color: #FFF;
+    top: 100px;
+    right: -100vw;
+    height: 100vh;
+    padding: 2vh 8vw;
+    transition: all .5s;
+    z-index: 2;
+    article{
+        display: flex;
+        flex-direction: column;
+    }
+}

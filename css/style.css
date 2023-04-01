@@ -1,0 +1,225 @@
+:export {
+  currentSlide: 0%;
+}
+
+/* Receteo de CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+}
+
+/* Estilos Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+header svg {
+  fill: #FA0DB4;
+  min-width: 30px;
+  min-height: 30px;
+}
+
+/*Estilos logo */
+.logo {
+  border: solid 1px;
+  border-radius: 50%;
+  background-image: url(../image/logo1.jpg);
+  background-size: cover;
+  background-position: center center;
+  width: 10%;
+  height: 10vh;
+  min-width: 100px;
+  min-height: 55px;
+}
+
+/* Estilos barra de navegacion */
+.menuPrincipal {
+  position: fixed;
+  background-color: #FFF;
+  top: 100px;
+  left: -100vw;
+  height: 100vh;
+  padding: 2vh 8vw;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.menuPrincipal ul {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#btnMenu:checked ~ .menuPrincipal {
+  left: 0px;
+}
+
+#btnCarrito:checked ~ .elementosCarrito {
+  right: 0px;
+}
+
+/* Estilos barra elementos de carrito */
+.elementosCarrito {
+  position: fixed;
+  background-color: #FFF;
+  top: 100px;
+  right: -100vw;
+  height: 100vh;
+  padding: 2vh 8vw;
+  transition: all 0.5s;
+  z-index: 2;
+}
+.elementosCarrito article {
+  display: flex;
+  flex-direction: column;
+}
+
+/*Estilos Footer */
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 5% 5%;
+  background-color: #540BDE;
+}
+footer .sreviciosFoote {
+  display: grid;
+  gap: 35px;
+  justify-content: center;
+  font-size: 48px;
+}
+footer .sreviciosFoote ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer svg {
+  fill: #fff;
+  min-width: 30px;
+  min-height: 30px;
+}
+footer span {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Estilos Seccion Articulos */
+.cuerpo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 45px;
+}
+
+.articulos article {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "titulo titulo" "imagen texto";
+  padding: 2% 3%;
+  gap: 10px;
+  text-align: center;
+}
+.articulos .titulo {
+  grid-area: titulo;
+}
+.articulos .imagenEvento {
+  grid-area: imagen;
+}
+.articulos .texto {
+  grid-area: texto;
+}
+
+/* Estilos Carrucel */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  --current-slide: 0;
+}
+
+.carousel-buttons {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.carousel-button {
+  margin: 0.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  opacity: 0.4;
+}
+.carousel-button svg {
+  width: 2.25rem;
+  height: 2rem;
+}
+.carousel-button:hover {
+  opacity: 0.2;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s;
+  /*transform: translateX(0%);*/
+  transform : translateX(calc(-100% * var(--current-slide)));
+}
+.slides .slide {
+  flex: 0 0 100%;
+  font-size: 4rem;
+}
+.slides .content {
+  height: 80vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.content-1 {
+  background-image: url(../../image/globo1.jpg);
+}
+.content-1 span {
+  display: none;
+}
+.content-2 {
+  background-image: url(../../image/caja_papel1.jpg);
+}
+.content-2 span {
+  display: none;
+}
+.content-3 {
+  background-image: url(../../image/globo2.jpg);
+}
+.content-3 span {
+  display: none;
+}
+.content-4 {
+  background-image: url(../../image/termos_playa.jpg);
+}
+.content-4 span {
+  display: none;
+}
+.content-5 {
+  background-image: url(../../image/vasos_14feb_1.jpg);
+}
+.content-5 span {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */

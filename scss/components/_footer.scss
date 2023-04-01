@@ -1,0 +1,32 @@
+/*Estilos Footer */
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    padding: 5% 5%;
+    background-color: map-get($map: $colorPalet, $key: c4);
+    
+
+    .sreviciosFoote{
+        display: grid;
+        gap: 35px;
+        justify-content: center;
+        font-size: 48px;
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    svg{
+        fill: #fff;
+        min-width: 30px;
+        min-height: 30px;
+    }
+
+    span{
+        color: #fff;
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,129 @@
+/* Estilos Seccion Articulos */
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+
+.articulos{
+    article{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: "titulo titulo"
+        "imagen texto";
+        padding: 2% 3%;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .titulo{
+        grid-area: titulo;
+    }
+
+    .imagenEvento{
+        grid-area: imagen;
+    }
+
+    .texto{
+        grid-area: texto;
+    }
+} 
+
+/* Estilos Carrucel */
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    --current-slide: 0;
+}
+
+.carousel-buttons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.carousel-button{
+    margin: 0.5rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    opacity: 0.4;
+
+    svg{
+        width: 2.25rem;
+        height: 2rem;
+    }
+
+    &:hover{
+        opacity: 0.2;
+    }
+}
+
+.slides{
+    display: flex;
+    transition: transform 0.5s;
+    transform: translateX(-100 * $currentSlide);
+    /*transform : translateX(calc(-100% * var(--current-slide)));*/
+
+    .slide{
+        flex: 0 0 100%;
+        font-size: 4rem;
+    }
+
+    .content{
+        height: 80vh;
+        background-size: cover;
+        background-position: center;
+
+    }
+}
+
+.content{
+    &-1{
+        background-image: url(../../image/globo1.jpg);
+        span{
+            display: none;
+        }
+    }
+
+    &-2{
+        background-image: url(../../image/caja_papel1.jpg);
+        span{
+            display: none;
+        }
+    }
+
+    &-3{
+        background-image: url(../../image/globo2.jpg);
+        span{
+            display: none;
+        }
+    }
+
+    &-4{
+        background-image: url(../../image/termos_playa.jpg);
+        span{
+            display: none;
+        }
+    }
+
+    &-5{
+        background-image: url(../../image/vasos_14feb_1.jpg);
+        span{
+            display: none;
+        }
+    }
+}
+
+
+
+
