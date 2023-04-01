@@ -12,23 +12,36 @@
     article{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "titulo titulo"
-        "imagen texto";
+        grid-template-areas: "nom nom"
+        "info btn";
         padding: 2% 3%;
         gap: 10px;
         text-align: center;
     }
 
-    .titulo{
-        grid-area: titulo;
+    .nombreArticulo{
+        grid-area: nom;
     }
 
-    .imagenEvento{
-        grid-area: imagen;
+    .btn-agregar{
+        grid-area: btn;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        span{
+            display: block;
+        }
+    }
+
+    .botonAgregarCarrito:hover{
+        cursor: pointer;
+        fill: map-get($map: $colorPalet, $key: c1);
+        color: map-get($map: $colorPalet, $key: c1);;
     }
 
     .texto{
-        grid-area: texto;
+        grid-area: info;
     }
 } 
 

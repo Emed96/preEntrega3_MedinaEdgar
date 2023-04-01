@@ -127,19 +127,30 @@ footer span {
 .articulos article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "titulo titulo" "imagen texto";
+  grid-template-areas: "nom nom" "info btn";
   padding: 2% 3%;
   gap: 10px;
   text-align: center;
 }
-.articulos .titulo {
-  grid-area: titulo;
+.articulos .nombreArticulo {
+  grid-area: nom;
 }
-.articulos .imagenEvento {
-  grid-area: imagen;
+.articulos .btn-agregar {
+  grid-area: btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articulos .btn-agregar span {
+  display: block;
+}
+.articulos .botonAgregarCarrito:hover {
+  cursor: pointer;
+  fill: #FA0DB4;
+  color: #FA0DB4;
 }
 .articulos .texto {
-  grid-area: texto;
+  grid-area: info;
 }
 
 /* Estilos Carrucel */
@@ -178,8 +189,8 @@ footer span {
 .slides {
   display: flex;
   transition: transform 0.5s;
-  /*transform: translateX(0%);*/
-  transform : translateX(calc(-100% * var(--current-slide)));
+  transform: translateX(0%);
+  /*transform : translateX(calc(-100% * var(--current-slide)));*/
 }
 .slides .slide {
   flex: 0 0 100%;
