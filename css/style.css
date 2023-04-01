@@ -124,10 +124,13 @@ footer span {
   gap: 45px;
 }
 
+.articulos {
+  font-size: 1.5rem;
+}
 .articulos article {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: "nom nom" "info btn";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "img nom btn" "img info btn";
   padding: 2% 3%;
   gap: 10px;
   text-align: center;
@@ -151,6 +154,15 @@ footer span {
 }
 .articulos .texto {
   grid-area: info;
+}
+.articulos .imagentermoejemplo {
+  grid-area: img;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articulos .imagentermoejemplo span {
+  display: block;
 }
 
 /* Estilos Carrucel */
@@ -189,8 +201,8 @@ footer span {
 .slides {
   display: flex;
   transition: transform 0.5s;
-  transform: translateX(0%);
-  /*transform : translateX(calc(-100% * var(--current-slide)));*/
+  /*transform: translateX(0%);*/
+  transform : translateX(calc(-100% * var(--current-slide)));
 }
 .slides .slide {
   flex: 0 0 100%;

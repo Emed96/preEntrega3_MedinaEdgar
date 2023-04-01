@@ -9,11 +9,12 @@
 }
 
 .articulos{
+    font-size: 1.5rem;
     article{
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-areas: "nom nom"
-        "info btn";
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "img nom btn"
+        "img info btn";
         padding: 2% 3%;
         gap: 10px;
         text-align: center;
@@ -42,6 +43,18 @@
 
     .texto{
         grid-area: info;
+    }
+
+    .imagentermoejemplo{
+        grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        span{
+            display: block;
+        }
+        
     }
 } 
 
