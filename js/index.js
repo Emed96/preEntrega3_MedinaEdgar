@@ -1,4 +1,6 @@
-//import {currentSlide} from '../scss/utils/_variables.scss'
+import catalogoAcrilico from '../data/acrilico.json' assert {type: 'json'}
+import catalogoAcero from '../data/acero.json' assert {type: 'json'}
+import catalogoPlastico from '../data/plastico.json' assert {type: 'json'}
 
 class Carousel{
     constructor(carousel){
@@ -64,7 +66,7 @@ articulosP.forEach((art, i) => {
     art.innerText = "$"+termo[i].precio
 });
 
-console.log(articulosP[1]);
+//console.log(articulosP[1]);
 
 function Agregar(){
     const data = JSON.stringify(termo[0]);
@@ -96,3 +98,5 @@ const agregarCarrito3 = document.querySelector('[btnAgregarCarrito3]');
 
 agregarCarrito3.addEventListener('click', Agregar3);
 
+
+console.log(catalogoAcero);
